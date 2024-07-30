@@ -1,4 +1,4 @@
-// Add text to side and top elements k 
+// Add text to side and top elements 
 const sideText = ["Side Text 1", "Side Text 2", "Side Text 3", "Side Text 4", "Side Text 5", "Side Text 6", "Side Text 7", "Side Text 8", "Side Text 9"];
 const topText = ["Top Text 1"];
 
