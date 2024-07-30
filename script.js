@@ -1,4 +1,4 @@
-// Labels for side and top elements
+// Labels for side and top elements ,
 const sideText = ["Side 1", "Side 2", "Side 3", "Side 4", "Side 5", "Side 6", "Side 7", "Side 8", "Side 9"];
 const topText = ["Top 1", "Top 2", "Top 3", "Top 4", "Top 5", "Top 6", "Top 7", "Top 8", "Top 9"];
 
