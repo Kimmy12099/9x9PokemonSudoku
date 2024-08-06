@@ -1,3 +1,4 @@
+/* Existing CSS */
 body {
     display: flex;
     justify-content: center;
@@ -123,4 +124,91 @@ body {
     bottom: -10px; /* Position the tail slightly up */
     left: 50%;
     transform: translateX(-50%);
+}
+
+/* New CSS for pop-up */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #333;
+}
+
+.close-btn:hover {
+    color: #f00; /* Red color on hover */
+}
+
+/* Remove bullets from the list */
+.popup ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.popup ul li {
+    margin: 10px 0;
+}
+
+/* Styles for the small 3x3 table and title */
+.small-table-container {
+    position: absolute;
+    bottom: 10px; /* Position it near the bottom */
+    right: 10px;  /* Adjust as needed */
+    z-index: 15;
+    text-align: center; /* Center align the title */
+}
+
+.small-table {
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 5px; /* Space between the table and the title */
+}
+
+.small-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    width: 50px; /* Adjust width as needed */
+    height: 50px; /* Adjust height as needed */
+}
+
+.small-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.small-table tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.table-title {
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 5px; /* Space between the table and the title */
 }

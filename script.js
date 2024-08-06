@@ -93,3 +93,25 @@ document.addEventListener('click', (event) => {
         }
     }
 });
+
+// Function to show the pop-up at the start
+function showPopup() {
+    const popup = document.getElementById('popup');
+    if (popup) {
+        popup.style.display = 'flex';
+    }
+}
+
+// Function to hide the pop-up
+function hidePopup() {
+    const popup = document.getElementById('popup');
+    if (popup) {
+        popup.style.display = 'none';
+    }
+}
+
+// Event listener for the close button
+document.getElementById('close-btn').addEventListener('click', hidePopup);
+
+// Show the pop-up when the page loads
+window.addEventListener('load', showPopup);
